@@ -63,7 +63,7 @@ public class MySkeletonRenderer : MonoBehaviour
     public GameObject Prefab_RightHand;
 
     private readonly float TestBoneThickness = 1f;
-    private readonly float HeadBoneThickness = 0.25f;
+    private readonly float HeadBoneThickness = 0.2f;
 
     #endregion
 
@@ -267,7 +267,7 @@ public class MySkeletonRenderer : MonoBehaviour
                     //Scale the head
                     if (startJoint.Type == Astra.JointType.Neck)
                     {
-                        skeletonBone.transform.localScale = new Vector3(HeadBoneThickness, magnitude * 1.5f, HeadBoneThickness);
+                        skeletonBone.transform.localScale = new Vector3(HeadBoneThickness, magnitude * 1.3f, HeadBoneThickness);
                     }
                     //Scale the hands
                     else if (startJoint.Type == Astra.JointType.LeftWrist || startJoint.Type == Astra.JointType.RightWrist)
