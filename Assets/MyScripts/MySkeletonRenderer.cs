@@ -142,7 +142,7 @@ public class MySkeletonRenderer : MonoBehaviour
 
                 if (!_bodySkeletons.ContainsKey(body.Id) && !_bodyBones.ContainsKey(body.Id))
                 {
-                    Debug.Log("New Body detected. Id: " + body.Id);
+                    //Debug.Log("New Body detected. Id: " + body.Id);
                     //Instantiate joint gameobjects
                     joints = new GameObject[body.Joints.Length];
                     for (int i = 0; i < joints.Length; i++)
@@ -222,7 +222,7 @@ public class MySkeletonRenderer : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("Existing body Id: " + body.Id);
+                    //Debug.Log("Existing body Id: " + body.Id);
                     joints = _bodySkeletons[body.Id];
                     bones = _bodyBones[body.Id];
                 }
